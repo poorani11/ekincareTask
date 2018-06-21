@@ -1,0 +1,146 @@
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background: #e1ebf6;
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  border-top:4px solid #648880;
+  padding 40px 0 22px 0;
+  font-size: 48px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  text-transform: uppercase;
+}
+
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: center;
+      font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h3, h4, h5, p,label {
+  margin-bottom: 22px;
+}
+
+h1, h2, h3, h4,label {
+  color: #648880;
+}
+h1 {
+  font-size: 36px;
+  line-height: 44px;
+}
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+input {
+	font-size: 17px;
+}
+
+fieldset
+ {
+	padding: 15px 0;
+}
+
+.col-1-3,
+.col-2-3 {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.grid,
+.col-1-3,
+.col-2-3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.read-csv {
+  margin-top:20px;
+  text-align: center;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+
+/*
+  ========================================
+  buttons
+  ========================================
+*/
+
+.btn {
+border-radius: 5px;
+color: #fff;
+cursor: pointer;
+display: inline-block;
+font-weight: 400;
+letter-spacing: .5px;
+margin: 0;
+text-transform: uppercase;
+text-align: center;
+}
+
+.btn-default {
+border: 0;
+background: #648880;
+padding: 11px 30px;
+font-size: 14px;
+}
+.btn-default:hover {
+background: #77a198;
+}
+
+.radioText{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    padding: 1rem;
+}
+
+.radiopara{
+    display:inline;
+}

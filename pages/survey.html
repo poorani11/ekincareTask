@@ -1,0 +1,30 @@
+<div ng-repeat="question in parsedEntries">
+    <h1>{{question.category}}</h1>
+    <div>
+        <h3>
+            <span>{{question.id}}) &nbsp &nbsp</span> {{question.question}}
+        </h3>
+        <div class="radioText" ng-repeat="option in question.newOption track by $index" ng-if = "question.class === 'checkbox'">
+            <div>
+                <input type="checkbox" ng-model="option.checked" ng-click="updateSelection($index, question.newOption)" />&nbsp &nbsp{{option}}
+            </div>
+        </div>
+        <div class="radioText" ng-repeat="option in question.newOption track by $index" ng-if = "question.class === 'radio'">
+            <div>
+                <input type="radio" />&nbsp &nbsp{{option}}
+            </div>
+        </div>
+        <div class="radioText"  ng-if = "question.class === 'text'">
+            <div>
+                <input type="text" placeholder="Enter feedback"/>
+            </div>
+        </div>
+
+    </div>
+    
+
+</div>
+
+<div class="read-csv">
+      <button  class="btn btn-primary" ng-click="startSurvey()">submit</button>
+    </div>
